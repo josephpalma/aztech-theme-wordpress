@@ -22,3 +22,7 @@ Version: 0.1
   display: flex;
   padding-left: 15px;
 }
+
+.site-info {
+  display: none;
+}
