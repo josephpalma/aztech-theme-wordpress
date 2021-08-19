@@ -1,0 +1,27 @@
+/*
+Theme Name: Inspiro Child
+Theme URI: https://www.aztechtattoohawaii.com
+Description: This is a child theme of Inspiro designed for aztechtattoohawaii.com
+Author: Joseph Palma
+Author URI: https://www.linkedin.com/in/joseph-palma-3681b5133/
+Template: inspiro
+Version: 0.1
+*/
+@import url("../inspiro/assets/css/unminified/style.css");
+
+.has-header-image.inspiro-front-page .custom-header {
+  display: none !important;
+}
+
+.site-content-contain {
+  background-color: green !important;
+}
+
+.site-title {
+  font-size: 150px !important;
+}
+
+.navbar-nav > li > a:hover {
+	color: rgb(124,243,251);
+	border-bottom: 1px solid rgba(124,243,251 0.8);
+}
