@@ -23,6 +23,21 @@ Version: 0.1
   padding-left: 15px;
 }
 
-.site-info {
-  /* display: none; */
+.side-nav .widget {
+  display: inline-block;
+}
+
+.sidebar-socials {
+  margin-left: -21px;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-socials {
+    display: none;
+  }
+}
+
+.navbar-toggle .navbar-iconbar:hover > span {
+  background: #7cf3fb;
+  transition: 0.2s ease color, 0.2s ease color;
 }
