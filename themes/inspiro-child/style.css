@@ -13,15 +13,12 @@ Version: 0.1
   display: none !important;
 }
 
-.site-content-contain {
-  background-color: green !important;
-}
-
-.site-title {
-  font-size: 150px !important;
-}
-
 .navbar-nav > li > a:hover {
 	color: rgb(124,243,251);
 	border-bottom: 1px solid rgba(124,243,251 0.8);
+}
+
+.wp-block-social-links.alignright {
+  display: flex;
+  padding-left: 15px;
 }
