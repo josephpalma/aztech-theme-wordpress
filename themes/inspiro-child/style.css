@@ -41,3 +41,37 @@ Version: 0.1
   background: #7cf3fb;
   transition: 0.2s ease color, 0.2s ease color;
 }
+
+.navbar-toggle .navbar-iconbar:hover > span {
+  background: #7cf3fb;
+  transition: 0.2s ease color, 0.2s ease color;
+}
+
+.custom-logo-link img {
+  max-height: 120px;
+}
+
+.header-logo-wrapper {
+  background: #101010;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  padding-top: 10px;
+  border: none;
+}
+
+#site-navigation {
+  max-height: 100px;
+}
+
+.navbar .header-navigation-wrapper {
+  padding-bottom: 70px;
+}
+
+.page-header {
+  display: none;
+}
+
+.content-area {
+  margin-top: 40px !important;
+}
