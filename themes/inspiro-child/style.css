@@ -139,5 +139,36 @@ p {
 .tattoo-image {
 	width: 500px;
   float: right;
-  margin: 200px 0 0 15px;
+  margin: 180px 0 0 0;
+  padding: 0 0 0 10px;
+  box-shadow: 10px 8px 0 0 #7cf3fb;
+}
+
+.entry-title {
+	display: table-cell !important;
+	padding-top: 140px !important;
+}
+
+.entry-meta {
+	padding-bottom: 25px;
+}
+
+.previous-post-cover {
+	margin: 260px auto 0;
+}
+
+@media (max-width: 760px) {
+  .entry-title {
+    padding-top: 30px !important;
+  }
+	.previous-post-cover {
+		margin: 60px auto 0;
+	}
+}
+
+
+.see-more {
+	float: left;
+  border-top: 1px solid;
+  margin-top: 20px;
 }

@@ -15,7 +15,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
-		<img class="tattoo-image" src="<?php echo get_the_post_thumbnail() ?>"></img>
+		<img class="tattoo-image" src=<?php echo get_the_post_thumbnail() ?>
 		<?php
 			if ( ( is_single() || ( is_page() && ! inspiro_is_frontpage() ) ) ) {
 				echo '<div class="inner-wrap">';
@@ -46,10 +46,11 @@
 
 				// Wrap the time string in a link, and preface it with 'Posted on'.
 				echo '<span class="screen-reader-text">Posted on</span> / ';
-				echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
+				echo '<a href="https://www.instagram.com/aztechtattoohawaii" rel="bookmark">' . $time_string . '</a>';
 				echo '</div><!-- .entry-meta -->';
 			}
 		?>
+
 		<?php
 		if ( is_single() || '' === get_the_post_thumbnail() ) {
 
@@ -59,6 +60,7 @@
 					/* translators: %s: Post title. */
 					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'inspiro' ),
 					get_the_title()
+
 				)
 			);
 
@@ -69,17 +71,12 @@
 					'link_before' => '<span class="page-number">',
 					'link_after'  => '</span>',
 				)
+
+
 			);
 		};
+		echo '<div class="see-more"><h5>Check out more awesome tattoos on <a href="https://www.instagram.com/aztechtattoohawaii">our instagram.</a></h5></div>';
 		?>
 	</div><!-- .entry-content -->
-
-	<?php if ( is_single() && 'side-right' === inspiro_get_theme_mod( 'layout_single_post' ) && is_active_sidebar( 'blog-sidebar' ) ) : ?>
-
-		<aside id="secondary" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'blog-sidebar' ); ?>
-		</aside>
-
-	<?php endif ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
