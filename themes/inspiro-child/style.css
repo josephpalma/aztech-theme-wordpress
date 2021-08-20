@@ -4,19 +4,67 @@ Theme URI: https://www.aztechtattoohawaii.com
 Description: This is a child theme of Inspiro designed for aztechtattoohawaii.com
 Author: Joseph Palma
 Author URI: https://www.linkedin.com/in/joseph-palma-3681b5133/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: inspiro
 Version: 0.1
 */
 @import url("../inspiro/assets/css/unminified/style.css");
 
+@font-face {
+	font-family: PlayfairDisplay;
+  font-weight: normal;
+	src: url("fonts/Playfair_Display/woff/PlayfairDisplay-Regular.woff2") format('woff2'), /* Super Modern Browsers */
+       url("fonts/Playfair_Display/woff/PlayfairDisplay-Regular.woff") format('woff'), /* Pretty Modern Browsers */
+       url("fonts/Playfair_Display/ttf/PlayfairDisplay-Regular.ttf") format('ttf'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: Montserrat;
+  font-weight: normal;
+	src: url("fonts/Montserrat/woff/Montserrat-Regular.woff2") format('woff2'), /* Super Modern Browsers */
+       url("fonts/Montserrat/woff/Montserrat-Regular.woff") format('woff'), /* Pretty Modern Browsers */
+       url("fonts/Montserrat/ttf/Montserrat-Regular.ttf") format('ttf'); /* Safari, Android, iOS */
+}
+
+h1 {
+	font-family: Montserrat, arial, sans-serif;
+}
+
+h2 {
+	font-family: Montserrat, arial, sans-serif;
+  font-size: 30px !important;
+}
+
+h3 {
+	font-family: Montserrat, arial, sans-serif;
+}
+
+h4 {
+	font-family: Montserrat, arial, sans-serif;
+}
+
+h5 {
+	font-family: Montserrat, arial, sans-serif;
+}
+
+p {
+	font-family: PlayfairDisplay, arial, sans;
+}
+
 .has-header-image.inspiro-front-page .custom-header {
   display: none !important;
 }
 
+.navbar-nav > li > a {
+  font-family: PlayfairDisplay !important;
+}
+
 .navbar-nav > li > a:hover {
 	color: rgb(124,243,251);
-	border-bottom: 1px solid rgba(124,243,251 0.8);
+  border-bottom: 1px solid rgb(124,243,251);
 }
+
 
 .wp-block-social-links.alignright {
   display: flex;
@@ -56,12 +104,16 @@ Version: 0.1
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  padding-top: 10px;
+  padding-top: 12px !important;
   border: none;
+  margin-left: 25px;
+	box-shadow: 0px 0 0 4px #7cf3fb;
 }
 
 #site-navigation {
   max-height: 100px;
+  box-shadow: 10px 8px 0 0 #7cf3fb;
+  margin-left: -10px;
 }
 
 .navbar .header-navigation-wrapper {
@@ -74,4 +126,18 @@ Version: 0.1
 
 .content-area {
   margin-top: 40px !important;
+}
+
+.navbar-nav > li.current-menu-item > a,
+.navbar-nav > li.current_page_item > a,
+.navbar-nav > li.current-menu-parent > a,
+.navbar-nav > li.current_page_parent > a {
+    border-bottom: 1px solid #7cf3fb;
+		color: #7cf3fb;
+}
+
+.tattoo-image {
+	width: 500px;
+  float: right;
+  margin: 200px 0 0 15px;
 }
