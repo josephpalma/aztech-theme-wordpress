@@ -35,7 +35,7 @@ get_header(); ?>
 			<?php
 			if ( have_posts() ) :
 
-				// Start the Loop.
+				// Start the Loop. Display the Posts 'featured image' in a grid format. 
 				while ( have_posts() ) :
 					the_post();
 

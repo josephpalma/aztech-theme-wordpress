@@ -52,19 +52,13 @@ p {
 	font-family: PlayfairDisplay, arial, sans;
 }
 
+a:hover {
+	color: #d90700 !important;
+}
+
 .has-header-image.inspiro-front-page .custom-header {
   display: none !important;
 }
-
-.navbar-nav > li > a {
-  font-family: PlayfairDisplay !important;
-}
-
-.navbar-nav > li > a:hover {
-	color: rgb(124,243,251);
-  border-bottom: 1px solid rgb(124,243,251);
-}
-
 
 .wp-block-social-links.alignright {
   display: flex;
@@ -86,12 +80,7 @@ p {
 }
 
 .navbar-toggle .navbar-iconbar:hover > span {
-  background: #7cf3fb;
-  transition: 0.2s ease color, 0.2s ease color;
-}
-
-.navbar-toggle .navbar-iconbar:hover > span {
-  background: #7cf3fb;
+  background: #d90700;
   transition: 0.2s ease color, 0.2s ease color;
 }
 
@@ -108,6 +97,17 @@ p {
   border: none;
   margin-left: 25px;
 	box-shadow: 0px 0 0 4px #7cf3fb;
+}
+
+.header-logo-wrapper:hover {
+  background: #101010;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  padding-top: 12px !important;
+  border: none;
+  margin-left: 25px;
+	box-shadow: 0px 0 0 4px #d90700;
 }
 
 #site-navigation {
@@ -128,13 +128,25 @@ p {
   margin-top: 40px !important;
 }
 
+/* selected nav bar item effects */
 .navbar-nav > li.current-menu-item > a,
 .navbar-nav > li.current_page_item > a,
 .navbar-nav > li.current-menu-parent > a,
 .navbar-nav > li.current_page_parent > a {
-    border-bottom: 1px solid #7cf3fb;
-		color: #7cf3fb;
+    border-bottom: 1px solid #d90700;
+		color: #d90700;
 }
+
+/* Nav bar hover effects */
+.navbar-nav > li > a:hover {
+	color: #d90700;
+  border-bottom: 1px solid #d90700;
+}
+
+.navbar-nav > li > a {
+  font-family: PlayfairDisplay !important;
+}
+
 
 .tattoo-image {
 	width: 500px;
@@ -165,7 +177,6 @@ p {
 		margin: 60px auto 0;
 	}
 }
-
 
 .see-more {
 	float: left;
