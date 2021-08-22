@@ -53,13 +53,15 @@ p {
 }
 
 a:hover {
-	color: #d90700 !important;
+	color: #007e8a !important;
 }
 
+/* do not display theme cover photo */
 .has-header-image.inspiro-front-page .custom-header {
   display: none !important;
 }
 
+/* social icons */
 .wp-block-social-links.alignright {
   display: flex;
   padding-left: 15px;
@@ -80,7 +82,7 @@ a:hover {
 }
 
 .navbar-toggle .navbar-iconbar:hover > span {
-  background: #d90700;
+  background: #007e8a;
   transition: 0.2s ease color, 0.2s ease color;
 }
 
@@ -107,13 +109,14 @@ a:hover {
   padding-top: 12px !important;
   border: none;
   margin-left: 25px;
-	box-shadow: 0px 0 0 4px #d90700;
+	box-shadow: 0px 0 0 2px #007e8a;
 }
 
+/* nav bar */
 #site-navigation {
   max-height: 100px;
   box-shadow: 10px 8px 0 0 #7cf3fb;
-  margin-left: -10px;
+	background: black;
 }
 
 .navbar .header-navigation-wrapper {
@@ -133,14 +136,16 @@ a:hover {
 .navbar-nav > li.current_page_item > a,
 .navbar-nav > li.current-menu-parent > a,
 .navbar-nav > li.current_page_parent > a {
-    border-bottom: 1px solid #d90700;
-		color: #d90700;
+    border-bottom: 1px solid rgba(0, 126, 138);
+		color: rgba(0, 126, 138);
+		text-shadow: 0 0 11px white;
 }
 
 /* Nav bar hover effects */
 .navbar-nav > li > a:hover {
-	color: #d90700;
-  border-bottom: 1px solid #d90700;
+	color: #007e8a;
+  border-bottom: 1px solid #007e8a;
+	text-shadow: 0 0 15px white;
 }
 
 .navbar-nav > li > a {
@@ -158,11 +163,15 @@ a:hover {
 
 .entry-title {
 	display: table-cell !important;
-	padding-top: 140px !important;
+	padding-top: 175px !important;
 }
 
 .entry-meta {
 	padding-bottom: 25px;
+}
+
+.entry-content {
+	text-align: left;
 }
 
 .previous-post-cover {
@@ -184,6 +193,7 @@ a:hover {
   margin-top: 20px;
 }
 
+/* gallery styles */
 .gallery-grid {
 	display: inline-flex !important;
 	gap: 15px;
@@ -191,7 +201,37 @@ a:hover {
 	padding: 20px;
 }
 
-.gallery-grid > img {
+.gallery-item-pic > a > img {
 	width: 350px;
-	height: 350px;
+	height: 200px;
+	box-shadow: 0px 0 0 4px #7cf3fb;
+}
+
+.gallery-item-pic > a > img:hover {
+	box-shadow: 0px 0 0 3px rgba(0, 126, 138, .85);
+}
+
+@media (max-width: 788px) {
+	.gallery-grid {
+		display: inherit !important;
+		padding: 20px;
+	}
+	.gallery-item-pic > a > img {
+		width: 350px;
+		height: 200px;
+		box-shadow: 0px 0 0 2px #007e8a;
+		margin: 10px 0 10px 0;
+	}
+}
+
+.navigation.post-navigation {
+	background-color: #7cf3fb !important;
+}
+
+.navigation.post-navigation:hover {
+	background-color: #007e8a !important;
+}
+
+.site-content {
+  text-align: -webkit-center;
 }

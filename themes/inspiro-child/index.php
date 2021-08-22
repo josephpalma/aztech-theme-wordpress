@@ -40,7 +40,7 @@ get_header(); ?>
 				while ( have_posts() ) :
 
 					the_post();
-					echo '<div class="gallery-item"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+					echo '<div class="gallery-item-pic"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
 					the_post_thumbnail();
 					echo '</a></div>';
 					/*
