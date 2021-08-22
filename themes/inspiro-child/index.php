@@ -35,17 +35,20 @@ get_header(); ?>
 			<?php
 			if ( have_posts() ) :
 
-				// Start the Loop. Display the Posts 'featured image' in a grid format. 
+				echo '<div class="gallery-grid">';
+				// Start the Loop. Display the Posts 'featured image' in a grid format.
 				while ( have_posts() ) :
-					the_post();
 
+					the_post();
+					echo '<div class="gallery-item"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+					the_post_thumbnail();
+					echo '</a></div>';
 					/*
 					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that
 					 * will be used instead.
 					 */
-					get_template_part( 'template-parts/post/content', get_post_format() );
 					endwhile;
 
 				the_posts_pagination(
@@ -53,6 +56,7 @@ get_header(); ?>
 						'prev_next' => false,
 					)
 				);
+				echo '</div>';
 				else :
 					get_template_part( 'template-parts/post/content', 'none' );
 				endif;

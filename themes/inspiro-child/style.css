@@ -183,3 +183,15 @@ a:hover {
   border-top: 1px solid;
   margin-top: 20px;
 }
+
+.gallery-grid {
+	display: inline-flex !important;
+	gap: 15px;
+	grid-template-columns: auto auto auto;
+	padding: 20px;
+}
+
+.gallery-grid > img {
+	width: 350px;
+	height: 350px;
+}
