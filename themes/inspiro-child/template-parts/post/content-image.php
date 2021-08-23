@@ -75,7 +75,7 @@
 
 			);
 		};
-		echo '<div class="see-more"><h5>Check out more awesome tattoos on <a href="https://www.instagram.com/aztechtattoohawaii">our instagram.</a></h5></div>';
+		echo '<div class="see-more"><h5>Check out more awesome tattoos on <a id="blue-link" href="https://www.instagram.com/aztechtattoohawaii">our instagram.</a></h5></div>';
 		?>
 	</div><!-- .entry-content -->
 

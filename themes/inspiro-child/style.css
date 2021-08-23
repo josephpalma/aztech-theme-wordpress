@@ -52,8 +52,25 @@ p {
 	font-family: PlayfairDisplay, arial, sans;
 }
 
+a {
+	color: #ddd;
+}
+
 a:hover {
 	color: #007e8a !important;
+	transition: color .1s ease-in;
+}
+
+#blue-link {
+	color: #7cf3fb !important;
+}
+
+.grey-out {
+	color: #777;
+}
+
+.site-content {
+  text-align: -webkit-center;
 }
 
 /* do not display theme cover photo */
@@ -67,6 +84,7 @@ a:hover {
   padding-left: 15px;
 }
 
+/* side bar */
 .side-nav .widget {
   display: inline-block;
 }
@@ -81,13 +99,41 @@ a:hover {
   }
 }
 
-.navbar-toggle .navbar-iconbar:hover > span {
-  background: #007e8a;
-  transition: 0.2s ease color, 0.2s ease color;
+/* sidebar recent tattoos */
+.widget .widget-title a, .widget ul li a,
+.site-footer .widget-area ul li a,
+.site-footer .widget-area ul li a {
+	color: #eee;
+	font-family: PlayfairDisplay;
 }
 
+.widget_recent_entries {
+	margin-top: -60px;
+}
+
+.wp-block-latest-posts, li {
+	margin-bottom: 25px;
+}
+
+.attachment-thumbnail.size-thumbnail.wp-post-image {
+	box-shadow: 0px 0 0 4px #7cf3fb;
+}
+
+.attachment-thumbnail.size-thumbnail.wp-post-image:hover {
+	box-shadow: 0px 0 0 3px rgba(0, 126, 138, .85);
+	transition: color .1s ease-in;
+}
+
+
+/* custom logo design in nav bar */
 .custom-logo-link img {
-  max-height: 120px;
+  max-height: 130px;
+	width: 130px !important;
+}
+
+/* remove logo shrink on scroll effect */
+body.wp-custom-logo .headroom--not-top .custom-logo-link img {
+  max-height: none;
 }
 
 .header-logo-wrapper {
@@ -95,7 +141,7 @@ a:hover {
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  padding-top: 12px !important;
+  padding-top: 10px !important;
   border: none;
   margin-left: 25px;
 	box-shadow: 0px 0 0 4px #7cf3fb;
@@ -110,6 +156,13 @@ a:hover {
   border: none;
   margin-left: 25px;
 	box-shadow: 0px 0 0 2px #007e8a;
+	transition: color .1s ease-in;
+}
+
+/* nav bar hamburger */
+.navbar-toggle .navbar-iconbar:hover > span {
+	background: #007e8a;
+	transition: 0.2s ease color, 0.2s ease color;
 }
 
 /* nav bar */
@@ -137,22 +190,22 @@ a:hover {
 .navbar-nav > li.current-menu-parent > a,
 .navbar-nav > li.current_page_parent > a {
     border-bottom: 1px solid rgba(0, 126, 138);
+		font-size: 18px;
 		color: rgba(0, 126, 138);
-		text-shadow: 0 0 11px white;
+		text-shadow: 0 0 1px white;
 }
 
 /* Nav bar hover effects */
 .navbar-nav > li > a:hover {
 	color: #007e8a;
   border-bottom: 1px solid #007e8a;
-	text-shadow: 0 0 15px white;
 }
 
 .navbar-nav > li > a {
   font-family: PlayfairDisplay !important;
 }
 
-
+/* post page styling */
 .tattoo-image {
 	width: 500px;
   float: right;
@@ -191,13 +244,13 @@ a:hover {
 	float: left;
   border-top: 1px solid;
   margin-top: 20px;
+  color: #777;
 }
 
 /* gallery styles */
 .gallery-grid {
 	display: inline-flex !important;
-	gap: 15px;
-	grid-template-columns: auto auto auto;
+	gap: 25px;
 	padding: 20px;
 }
 
@@ -209,6 +262,7 @@ a:hover {
 
 .gallery-item-pic > a > img:hover {
 	box-shadow: 0px 0 0 3px rgba(0, 126, 138, .85);
+	transition: color .1s ease-in;
 }
 
 @media (max-width: 788px) {
@@ -224,14 +278,338 @@ a:hover {
 	}
 }
 
+/* posts 'next tattoo' footer */
 .navigation.post-navigation {
-	background-color: #7cf3fb !important;
+	background-color: egg !important;
 }
 
 .navigation.post-navigation:hover {
 	background-color: #007e8a !important;
+	transition: color .1s ease-in;
 }
 
-.site-content {
-  text-align: -webkit-center;
+.nav-title {
+	font-family: PlayfairDisplay;
+}
+
+/* front page */
+#header-photo {
+  margin-left: 35%;
+  margin-right: 50%;
+  width: 280px;
+	margin-top: -127px;
+	margin-bottom: -15px;
+}
+
+#landing-photo {
+	width: 210px;
+	margin-top: 0px;
+	margin-left: 11%;
+}
+
+/* front page tattoo gallery */
+.gallery-home {
+	padding: 0px 0 35px 0;
+}
+
+.recent-work-home {
+	margin: 0 -5px;
+}
+
+.recent-work-extra {
+	float: right;
+  margin-top: -07%;
+}
+
+.blocks-gallery-item {
+	width: 300px;
+  height: 260px;
+  box-shadow: 0px 0 0 4px #7cf3fb;
+}
+
+.blocks-gallery-item:hover {
+	width: 300px;
+  height: 260px;
+  box-shadow: 0px 0 0 3px #007e8a;
+	cursor: pointer;
+	transition: color .1s ease-in;
+}
+
+.google-map {
+	margin-top: 80px;
+}
+
+.contact-home {
+	float: right;
+	margin-top: -53%;
+	margin-right: 60px;
+}
+
+.contact-home > p {
+	height: 15px;
+}
+
+#contact-home-divider {
+	float: left;
+	width: 255px;
+}
+
+
+
+/* quotes carousel styling */
+
+.content-slider {
+  width: 100%;
+  height: 265px;
+	margin-top: 75px;
+}
+
+.slider {
+  height: 225px;
+  width: 680px;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+.mask {
+  overflow: hidden;
+  height: 225px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: 680px;
+  height: 320px;
+  position: absolute;
+  top: -325px;
+  list-style: none;
+}
+
+.slider .quote {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.slider .source {
+  font-size: 20px;
+  text-align: right;
+}
+
+.slider li.anim1 {
+  animation: cycle 30s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 30s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 30s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 30s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 30s linear infinite;
+}
+
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
 }
