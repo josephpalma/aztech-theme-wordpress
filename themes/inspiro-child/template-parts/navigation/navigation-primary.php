@@ -32,7 +32,7 @@
 			<?php endif ?>
 
 			<?php if ( is_active_sidebar( 'header_social' ) ) : ?>
-				<div class="header_social">
+				<div id="menu-social-icons" class="header_social">
 					<?php dynamic_sidebar( 'header_social' ); ?>
 				</div>
 			<?php endif ?>

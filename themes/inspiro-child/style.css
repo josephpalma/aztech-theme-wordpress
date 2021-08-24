@@ -11,6 +11,8 @@ Version: 0.1
 */
 @import url("../inspiro/assets/css/unminified/style.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 @font-face {
 	font-family: PlayfairDisplay;
   font-weight: normal;
@@ -45,7 +47,7 @@ h4 {
 }
 
 h5 {
-	font-family: Montserrat, arial, sans-serif;
+	font-family: Nunito, sans-serif;
 }
 
 p {
@@ -67,6 +69,43 @@ a:hover {
 
 .grey-out {
 	color: #777;
+}
+
+/* banner styles */
+.site-header.headroom {
+	position: initial !important;
+}
+
+.banner {
+	background-color: #7cf3fb;
+}
+
+.banner-content {
+  max-width: 1300px;
+  padding-left: 2.25em;
+  padding-right: 1.25em;
+  margin: -15px 0 -15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.banner-socials {
+	height: 50px;
+}
+
+.banner-text-phone {
+	flex-grow: 1;
+	margin-left: 10px;
+}
+
+body.colors-dark h5, .page-title {
+	color: black;
+}
+
+@media (max-width: 700px) {
+	.banner {
+		display: none;
+	}
 }
 
 .site-content {
@@ -160,6 +199,10 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 }
 
 /* nav bar hamburger */
+.navbar-toggle {
+	padding-left: 20px;
+}
+
 .navbar-toggle .navbar-iconbar:hover > span {
 	background: #007e8a;
 	transition: 0.2s ease color, 0.2s ease color;
@@ -168,12 +211,17 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 /* nav bar */
 #site-navigation {
   max-height: 100px;
-  box-shadow: 10px 8px 0 0 #7cf3fb;
+  /* box-shadow: 10px 8px 0 0 #7cf3fb; */
 	background: black;
 }
 
 .navbar .header-navigation-wrapper {
-  padding-bottom: 70px;
+  padding-bottom: 85px;
+	margin-right: 25px;
+}
+
+.wp-block-social-links .wp-social-link.wp-social-link.wp-social-link {
+	margin: 4px 1px 1px 0;
 }
 
 .page-header {
@@ -182,6 +230,10 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 
 .content-area {
   margin-top: 40px !important;
+}
+
+#menu-social-icons {
+	display: none;
 }
 
 /* selected nav bar item effects */
@@ -283,6 +335,7 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 	.gallery-grid {
 		grid-column-gap: 65px;
 		grid-row-gap: 45px;
+		margin-left: 5%;
 	  grid-template-columns: auto auto auto;
 	}
 }
@@ -291,7 +344,14 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 	.gallery-grid {
 		grid-column-gap: 80px;
 		grid-row-gap: 55px;
+		margin-left: 8%;
 	  grid-template-columns: auto auto;
+	}
+	.tattoo-image {
+	  float: none;
+	}
+	.entry-title {
+		padding-top: 55px !important;
 	}
 }
 
