@@ -228,7 +228,7 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 }
 
 .previous-post-cover {
-	margin: 260px auto 0;
+	margin: 140px auto 0;
 }
 
 @media (max-width: 760px) {
@@ -249,14 +249,22 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 
 /* gallery styles */
 .gallery-grid {
-	display: inline-flex !important;
-	gap: 25px;
-	padding: 20px;
+	display: grid;
+	grid-row-gap: 50px;
+	grid-column-gap: 35px;
+  padding: 20px;
+  grid-template-columns: auto auto auto auto auto;
+	margin-left: 1.6%;
+}
+
+.gallery-item-pic {
+	width: 200px;
+	height: 185px;
 }
 
 .gallery-item-pic > a > img {
-	width: 350px;
-	height: 200px;
+	width: 200px !important;
+	height: 185px !important;
 	box-shadow: 0px 0 0 4px #7cf3fb;
 }
 
@@ -265,16 +273,39 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 	transition: color .1s ease-in;
 }
 
-@media (max-width: 788px) {
+@media (max-width: 1345px) {
 	.gallery-grid {
-		display: inherit !important;
-		padding: 20px;
+	  grid-template-columns: auto auto auto auto;
+	}
+}
+
+@media (max-width: 1124px) {
+	.gallery-grid {
+		grid-column-gap: 65px;
+		grid-row-gap: 45px;
+	  grid-template-columns: auto auto auto;
+	}
+}
+
+@media (max-width: 948px) {
+	.gallery-grid {
+		grid-column-gap: 80px;
+		grid-row-gap: 55px;
+	  grid-template-columns: auto auto;
+	}
+}
+
+@media (max-width: 718px) {
+	.gallery-grid {
+		grid-column-gap: 80px;
+		grid-row-gap: 55px;
+	  grid-template-columns: auto;
+	}
+	.gallery-item-pic {
+		margin: 10px 0 10px 0;
 	}
 	.gallery-item-pic > a > img {
-		width: 350px;
-		height: 200px;
-		box-shadow: 0px 0 0 2px #007e8a;
-		margin: 10px 0 10px 0;
+		width: 550px !important;
 	}
 }
 
@@ -309,7 +340,7 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 
 /* front page tattoo gallery */
 .gallery-home {
-	padding: 0px 0 35px 0;
+	padding: 20px 0 55px 0;
 }
 
 .recent-work-home {
@@ -341,7 +372,7 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 
 .contact-home {
 	float: right;
-	margin-top: -53%;
+	margin-top: -53.8%;
 	margin-right: 60px;
 }
 
@@ -350,18 +381,16 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 }
 
 #contact-home-divider {
-	float: left;
-	width: 255px;
+	margin: 50px 0 30px 0;
 }
 
 
 
 /* quotes carousel styling */
-
 .content-slider {
   width: 100%;
   height: 265px;
-	margin-top: 75px;
+	margin: 115px 0 80px 0;
 }
 
 .slider {
