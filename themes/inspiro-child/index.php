@@ -17,7 +17,6 @@
 
 get_header(); ?>
 
-<div class="gallery-grid">
 <div class="inner-wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>
 		<header class="page-header">
@@ -39,8 +38,8 @@ get_header(); ?>
 				// Start the Loop. Display the Posts 'featured image' in a grid format.
 				while ( have_posts() ) :
 
-					the_post();
 					echo '<div class="gallery-item-pic"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+					the_post();
 					the_post_thumbnail();
 					echo '</a></div>';
 					/*
@@ -73,7 +72,6 @@ get_header(); ?>
 	<?php endif ?>
 
 </div><!-- .inner-wrap -->
-</div> <!-- gallery-grid -->
 
 <?php
 get_footer();
