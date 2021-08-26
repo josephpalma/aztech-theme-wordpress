@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 	<div class="banner">
     <div class="banner-content">
 			<div class="banner-text-phone"><a href="tel:808-699-8726"><h5><u>808-699-8726</u></h5></a></div>
@@ -30,6 +31,7 @@
 			</div>
 		</div>
 	</div>
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'inspiro' ); ?></a>
