@@ -59,6 +59,10 @@ h5 {
 	font-family: Montserrat, sans-serif;
 }
 
+h6 {
+	font-family: Montserrat, sans-serif;
+}
+
 p {
 	font-family: PlayfairDisplay, arial, sans;
 }
@@ -336,6 +340,8 @@ body.colors-dark .navbar-toggle:active {
 
 .entry-content {
 	text-align: left;
+	overflow: hidden;
+	height: 100%;
 }
 
 .previous-post-cover {
@@ -544,7 +550,7 @@ button {
 
 .landing-div {
 	margin: 15% auto 15% auto !important;
-	max-width: 800px;
+	max-width: 900px;
 	position: relative;
 }
 
@@ -586,7 +592,7 @@ button {
 /* front page tattoo gallery */
 .gallery-home {
 	position: relative;
-	margin: 15% auto 15% auto !important;
+	margin: 15% auto 20% auto !important;
 	display: grid;
 	max-width: max-content;
 }
@@ -672,7 +678,27 @@ button {
     height: .1px !important;
 }
 
+/* footer */
+.site-footer, .has-footer-widgets {
+	height: 100%;
+}
 
+.site-footer, .footer-widgets {
+	padding-bottom: 100px;
+}
+
+.footer-socials {
+	margin -25px 0 0 0;
+}
+
+.footer-design-creds {
+	display: flex;
+  align-content: center;
+}
+
+#footer-github {
+	margin: 10px 10px 0 0;
+}
 
 /* quotes carousel styling */
 .content-slider {
@@ -1033,7 +1059,7 @@ html {
 .space {
   position: absolute;
   width: 500vw;
-  height: 550vh;
+  height: 660vh;
   top: 50%;
   left: 50%;
   margin-top: -200vh;
