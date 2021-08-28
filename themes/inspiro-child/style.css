@@ -244,7 +244,7 @@ body.wp-custom-logo .headroom--not-top .custom-logo-link img {
 #site-navigation {
   max-height: 100px;
   /* box-shadow: 10px 8px 0 0 #7cf3fb; */
-	background: rgba(0,0,0,0.82);
+	background: rgba(0,0,0,0.75);
 }
 
 .navbar .header-navigation-wrapper {
@@ -375,7 +375,7 @@ body.colors-dark .navbar-toggle:active {
   padding: 20px;
   grid-template-columns: auto auto auto auto;
 	justify-content: center;
-	margin: 12% auto 12% auto;
+	margin: 16% auto 12% auto;
 }
 
 .gallery-item-pic {
@@ -551,7 +551,7 @@ button {
 }
 
 .landing-div {
-	margin: 15% auto 15% auto !important;
+	margin: 25% auto 20% auto !important;
 	max-width: 900px;
 	position: relative;
 }
@@ -594,7 +594,7 @@ button {
 /* front page tattoo gallery */
 .gallery-home {
 	position: relative;
-	margin: 15% auto 20% auto !important;
+	margin: 15% -20% 20% -10% !important;
 	display: grid;
 	max-width: max-content;
 }
@@ -615,14 +615,12 @@ button {
 
 .blocks-gallery-item {
 	width: 300px;
-  height: 260px;
+  height: 350px;
   box-shadow: 0px 0 0 4px var(--lightBlue);
 	border-radius: 1px;
 }
 
 .blocks-gallery-item:hover {
-	width: 300px;
-  height: 260px;
   box-shadow: 0px 0 0 3px var(--darkGreen);
 	cursor: pointer;
 	transition: color .1s ease-in;
@@ -654,7 +652,7 @@ button {
 .location-home {
 	position: relative;
 	display: inline-flex;
-  margin: 15% auto 15% auto !important;
+  margin: 10% auto 20% auto !important;
 }
 
 .google-map {
@@ -672,7 +670,7 @@ button {
 }
 
 #contact-home-divider {
-	margin: 50px 0 30px 0;
+	margin: 30px 0 30px 0;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
@@ -683,20 +681,20 @@ button {
 /* footer */
 .site-footer {
 	position: relative;
-	background: rgba(0,0,0,0.82) !important;
+	background: rgba(0,0,0,0.75) !important;
 }
 
 .site-footer, .has-footer-widgets {
-	height: 90%;
+	height: 60%;
 }
 
 .site-footer, .footer-widgets {
-	padding-bottom: 100px;
+	padding-bottom: 90px;
 }
 
 .footer-socials, #footer-socials {
 	float: none !important;
-  margin: -10px 0 0 -6px;
+  margin: -20px 0 -10px -6px;
   justify-content: center !important;
 }
 
@@ -718,6 +716,16 @@ button {
 	text-align: center;
 }
 
+.footer-extra {
+	height: 2000px;
+	background: black;
+	position: relative;
+}
+
+#footer-widget2 {
+	line-height: 10px;
+}
+
 /* appointments page */
 .layout-grid {
 	text-align: right;
@@ -728,6 +736,70 @@ button {
 	position: relative;
 }
 
+.wpforms-field, .wpforms-field-name, .form-field {
+	  width: 166.5% !important;
+}
+
+#wpforms-500-field_7-container {
+	  width: 100% !important;
+}
+
+/* Submit Button */
+#wpforms-submit-500 {
+    background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+  border-radius: 2px;
+}
+
+#wpforms-submit-500 {
+  color: var(--lightBlue);
+  transition: 0.25s;
+  &:hover,
+  &:focus {
+    border-color: rgba(0, 126, 138);
+    color: rgba(0, 126, 138, .35);
+  }
+}
+
+#wpforms-submit-500:hover,
+#wpforms-submit-500:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--darkGreen);
+  transform: translateY(-0.25em);
+}
+
+#wpforms-submit-500 > a {
+	text-decoration: none !important;
+	color: var(--lightBlue);
+}
+
+#wpforms-submit-500 > a {
+	text-decoration: none !important;
+	color: var(--lightBlue);
+}
+
+#wpforms-submit-500 {
+	background: none;
+	border: 2px solid;
+	font: 0 !important;
+	line-height: 1;
+	margin: 0 !important;
+	margin-left: 0 !important;
+	padding: 1em 2em !important;
+	border-radius: 2px;
+	margin-top: 10px !important;
+}
+
+/* About Us Page */
+.wp-block-social-links, .aligncenter, .about-us-socials {
+	display: flex !important;
+}
+
+.wp-block-social-links, .aligncenter, .about-us-socials > li {
+	margin: 0 10px 10px 10px !important;
+}
 
 
 /* quotes carousel styling */
@@ -1018,7 +1090,7 @@ html {
 .space {
   position: absolute;
   width: 500vw;
-  height: 660vh;
+  height: 690vh;
   top: 50%;
   left: 50%;
   margin-top: -200vh;
