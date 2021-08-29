@@ -22,7 +22,8 @@
 
 <body <?php body_class(); ?>>
 
-  <div class="space"></div>
+  <!-- <div class="space"></div> -->
+	<div class="stars"></div>
 	<div class="banner">
     <div class="banner-content">
 			<div class="banner-text-phone"><a href="tel:808-699-8726"><h5><u>808-699-8726</u></h5></a></div>
