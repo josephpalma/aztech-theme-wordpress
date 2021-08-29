@@ -569,6 +569,10 @@ button {
 	margin: 9% auto 15% auto;
 }
 
+.no-post-button {
+	height: 180px;
+}
+
 .scroll-down {
   letter-spacing: 2px;
 	height: 0;

@@ -34,7 +34,6 @@ get_header(); ?>
 			<?php
 			if ( have_posts() ) :
 
-				echo '<div class="space"></div>';
 				echo '<div class="gallery-grid">';
 				// Start the Loop. Display the Posts 'featured image' in a grid format.
 				while ( have_posts() ) :

@@ -28,24 +28,14 @@ get_header(); ?>
 
 		$previous_post = get_previous_post();
 
+    $previous_post_url = get_permalink( $previous_post->ID );
+
 		if ( $previous_post ) {
-			$prev_image     = wp_get_attachment_image_src( get_post_thumbnail_id( $previous_post->ID ), 'inspiro-entry-cover' );
-			$previous_cover = '';
-
-			if ( $prev_image && isset( $prev_image[0] ) ) {
-
-				echo '<div class="previous-post-cover">';
-
-				the_post_navigation(
-					array(
-						'prev_text' => '<div class="previous-info">' . $previous_cover . '<div class="previous-content"><span class="screen-reader-text">' . __( '', 'inspiro' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( '', 'inspiro' ) . '</span> <span class="nav-title">Last Tattoo →</span></div></div>',
-						'next_text' => '',
-					)
-				);
-
-				echo '</div><!-- .previous-post-cover -->';
-			}
+			echo '<button id="post-button" class="raise"><a href="' . $previous_post_url . '"><p style="margin: 0">Last Tattoo ⤗</p></a></button>';
+		} else {
+			echo '<div class="no-post-button"></div>';
 		}
+
 	endwhile; // End the loop.
 	?>
 
