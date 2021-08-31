@@ -8,13 +8,11 @@ style="
 margin-right: 10px;
 width: 150px;
 height: 150px;
-float: left;
-margin-top: 20px;
 " />
 
 
-##### By [Joseph Palma](https://www.linkedin.com/in/joseph-palma-3681b5133/)
-##### View the [live site](https://www.aztechtattoohawaii.com)
+#### By [Joseph Palma](https://www.linkedin.com/in/joseph-palma-3681b5133/)
+#### View the [live site](https://www.aztechtattoohawaii.com)
 
 <br />
 
