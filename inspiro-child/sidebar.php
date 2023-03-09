@@ -44,7 +44,7 @@
 
 					<div class="sidebar-contacts">
 						<p><a href="tel:808-699-8726">808-699-8726</a></p>
-					  <p><a href="mailto:bookings@aztechtattoohawaii.com">bookings@aztechtattoohawaii.com</a></p>
+					  <p><a href="mailto:aztechtattoohawaii@gmail.com">aztechtattoohawaii@gmail.com</a></p>
 					</div>
 
 				</nav>

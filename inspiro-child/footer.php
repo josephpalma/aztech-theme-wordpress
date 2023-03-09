@@ -36,7 +36,7 @@
 					</div>
 					</span>
 					<span>
-						© 2021 Copyright Aztech Tattoo All Rights Reserved
+						© 2023 Copyright Aztech Tattoo All Rights Reserved
 					</span>
 				</span>
 			</div><!-- .site-info -->

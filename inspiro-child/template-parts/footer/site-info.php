@@ -31,7 +31,7 @@
 		</div>
 		</span>
 		<span>
-			<?php printf( esc_html__( '© 2021 Copyright Aztech Tattoo All Rights Reserved' )); ?>
+			<?php printf( esc_html__( '© 2023 Copyright Aztech Tattoo All Rights Reserved' )); ?>
 		</span>
 	</span>
 </div><!-- .site-info -->

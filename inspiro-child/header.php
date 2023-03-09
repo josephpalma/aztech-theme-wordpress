@@ -27,7 +27,7 @@
 	<div class="banner">
     <div class="banner-content">
 			<div class="banner-text-phone"><a href="tel:808-699-8726"><h5><u>808-699-8726</u></h5></a></div>
-			<div class="banner-text-email"><a href="mailto:bookings@aztechtattoohawaii.com"><h5><u>bookings@aztechtattoohawaii.com</u></h5></a></div>
+			<div class="banner-text-email"><a href="mailto:aztechtattoohawaii@gmail.com"><h5><u>aztechtattoohawaii@gmail.com</u></h5></a></div>
 			<div class="banner-socials">
 				<?php dynamic_sidebar( 'header_social' ); ?>
 			</div>
